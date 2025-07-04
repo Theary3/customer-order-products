@@ -25,6 +25,7 @@ CREATE TABLE products (
 -- Orders Table
 CREATE TABLE orders (
     order_id SERIAL PRIMARY KEY,
+    customer_id INT REFERENCES customer(customer_id) ON DELETE CASCADE,
     product_id INT REFERENCES products(product_id) ON DELETE CASCADE,
     quantity INT NOT NULL CHECK (quantity > 0),
     total_amount DECIMAL(10, 2) NOT NULL,
