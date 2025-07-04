@@ -6,11 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-*/
+
 
 // Health check
 Route::get('/health', function () {
@@ -31,7 +27,6 @@ Route::get('/product_by_id/{id}', [ProductController::class, 'getById']);
 Route::get('/product_variants', [ProductController::class, 'getVariants']);
 Route::get('/products/groups', [ProductController::class, 'getGroups']);
 
-// Purchase route (public in your original, but should probably be protected)
 Route::post('/buy', [OrderController::class, 'buyProduct']);
 
 // Protected routes
