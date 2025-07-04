@@ -11,9 +11,9 @@ class Customer extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = 'customer'; // Your custom table
-    protected $primaryKey = 'customer_id'; // Important if not 'id'
-    public $timestamps = true; // created_at and updated_at are present
+    protected $table = 'customer'; 
+    protected $primaryKey = 'customer_id'; 
+    public $timestamps = true; 
 
     protected $fillable = [
         'username',
