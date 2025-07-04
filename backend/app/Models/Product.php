@@ -9,7 +9,7 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = 'product_id'; // IMPORTANT: match your DB
+    protected $primaryKey = 'product_id'; 
 
     protected $fillable = [
         'category',
