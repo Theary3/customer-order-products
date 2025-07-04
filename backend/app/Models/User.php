@@ -11,17 +11,17 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    protected $table = 'customer'; // Your custom table
+    protected $table = 'customer'; 
 
-    protected $primaryKey = 'customer_id'; // Important if not 'id'
+    protected $primaryKey = 'customer_id'; 
 
-    public $timestamps = true; // created_at and updated_at are present
+    public $timestamps = true; 
 
     protected $fillable = [
         'username',
         'email',
         'password',
-        'is_admin', // if used
+        'is_admin', 
     ];
 
     protected $hidden = [
