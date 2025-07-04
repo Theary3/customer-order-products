@@ -9,9 +9,9 @@ class Order extends Model
 {
     use HasFactory;
 
-    protected $table = 'orders'; // matches your DB table
-    protected $primaryKey = 'order_id'; // use this because it's not "id"
-    public $timestamps = false; // if you have created_at and updated_at
+    protected $table = 'orders'; 
+    protected $primaryKey = 'order_id'; 
+    public $timestamps = false; 
 
     protected $fillable = [
         'customer_id',
