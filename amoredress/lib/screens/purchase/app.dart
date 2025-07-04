@@ -74,6 +74,10 @@ class MyApp extends StatelessWidget {
           case '/home':
             page = HomePage();
             break;
+          case '/signin':
+            page = LoginScreen();
+            break;
+
           default:
             page = HomePage();
         }
