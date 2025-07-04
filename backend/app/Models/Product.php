@@ -26,7 +26,7 @@ class Product extends Model
         'stock' => 'integer',
     ];
 
-    public $timestamps = true; // you have created_at, updated_at
+    public $timestamps = true; 
 
     public function orders()
     {
